@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB đoán tuổi trong 1 giây !</title>
+</head>
+
+<body>
+    <div>
+        <p>Nhập tuổi vô , tao sẽ đoán tuổi mày trong 1 giây: </p>
+        <input id="input" type="number">
+        <button onclick="tuoimay()">OK</button>
+        <p id="result"></p> <!-- Thêm một thẻ p để hiển thị kết quả -->
+    </div>
+</body>
+<script>
+    function tuoimay() {
+        var tuoi = document.getElementById("input").value; // Lấy giá trị từ thuộc tính value
+        var tuoiMessage = "Tuổi của mày là: " + parseInt(tuoi); // Tạo thông điệp với tuổi
+        document.getElementById("result").innerText = tuoiMessage; // Cập nhật nội dung của thẻ p với id "result"
+    }
+</script>
+
+</html>
